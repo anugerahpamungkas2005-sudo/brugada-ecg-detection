@@ -32,15 +32,31 @@ The model successfully detected 12 out of 17 Brugada cases.
 * model.pkl → trained model
 * threshold.pkl → optimal threshold
 
-## 🚀 How to Run
+## ▶️ How to Use
 
-1. Install dependencies:
+1. Clone repository:
+
+```
+git clone https://github.com/anugerahpamungkas2005-sudo/brugada-ecg-detection
+```
+
+2. Install dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Run the notebook
+3. Run the notebook:
+   Open `notebook.ipynb` using Google Colab or Jupyter Notebook
+
+4. (Optional) Use pre-trained model:
+
+```
+import joblib
+
+model = joblib.load("model/brugada_logistic_regression_adasyn.pkl")
+threshold = joblib.load("model/brugada_lr_threshold_adasyn.pkl")
+```
 
 ## 📚 Dataset
 
